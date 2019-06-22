@@ -1,0 +1,63 @@
+quirk,  intimidate,  frantic,
+The meat of the video.
+I would be really upfront.
+Would be a bummer.
+Have to have.
+
+Python 3 readiness
+-------------------------------------------
+1.  Using CD change directory  :
+
+C:\Users\khetwal om>cd downloads
+C:\Users\khetwal om\Downloads>cd Users
+The system cannot find the path specified.
+
+C:\Users\khetwal om\Downloads>cd C:\Users
+
+C:\Users>
+
+Here is a proper difference 
+--------------------------------------------
+2.  Proper way to get to the root directory at once.
+
+C:\Users\khetwal om>cd/
+
+C:\>cd Users
+
+C:\Users>cd khetwal om
+
+C:\Users\khetwal om>cd downloads
+
+C:\Users\khetwal om\Downloads>cd\
+
+C:\>
+----------------------------------------------
+3.Using tab to for increasing the speed
+
+C:\>cd Users
+
+C:\Users>cd "khetwal om"
+
+C:\Users\khetwal om>cd Downloads
+
+C:\Users\khetwal om\Downloads>
+-----------------------------------------------
+4 To open a file just go to the respective directory ,dir,then simply type the name of the file ,you can just write the first letter and
+then the tab button it is gonna show the name of if can write the tab to change the name of the file No matter how long it is just type the 
+name it is gonna switch to that respective item. Yeah this is amazing.
+
+
+-----------------------------------------------------------------
+5.To copy a file in the same directory with another name
+move james.jpg hola.jpg
+hola.jpg
+Boom the result is the same
+Oh no it's just the renaming of the file 
+----------------------------------------------------
+6.Moving a file to another directory ,here is the root directory
+D:\desktop background>move james.jpg ../
+        1 file(s) moved.
+
+D:\desktop background>
+
+----------------------------------------------

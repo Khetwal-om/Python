@@ -1,0 +1,8 @@
+Dunder means double underscore
+__str__
+__init__
+These have a special meaning.
+
+Boolean means True or False 
+capital F not small one or T and t.
+
