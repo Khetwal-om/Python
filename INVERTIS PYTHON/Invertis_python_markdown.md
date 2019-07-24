@@ -18,6 +18,7 @@ we should not use self,cls,classname
 
 #from the class we can access global variables directly within the method of a class we can declare global variables by using global
 
+'''
 
 class Test:
  def me():
@@ -32,11 +33,14 @@ t=Test()
 t.m1()
 t.m2()
 
+
+'''
 We can't access local variables outside of the class
 
 
 #this is valid
 
+'''
 
 class Test:
  def me():
@@ -53,8 +57,10 @@ t=Test()
 t.m1()
 t.m2()  
 
+'''
 
 #2
+'''
 class Test:
 def average(self,list):
    result=sum(list)
@@ -64,10 +70,12 @@ t.Test()
 t.average([10,20])
 
 
-
+'''
 
 
 #global variable
+'''
+
 x=100
 class Test:
    def m(self):
@@ -77,10 +85,11 @@ t=Test()
 t.m()
 
 
-
+'''
 
 
 #
+'''
 x=10
 class Test:
     x=777
@@ -96,11 +105,11 @@ t=Test()
 t.m1()
 t.m2()
 
-
+'''
 
 
 #This is the global x
-
+'''
 class Test:
    def m1(self):
        global x
@@ -110,13 +119,15 @@ class Test:
     def m2(self):
        print(x)
 
+'''
+
 #this won't show the error as x is declared to be global
 
 #Instance method,Getter and Setter
 Types
-Instance methods
-class methods
-static methods
+1.Instance methods
+2.class methods
+3.static methods
 
 
 Instance methods:
@@ -131,7 +142,7 @@ setter and getter methods:
 #s.getName() with validation
 #hiding data behind methods----encapsulation
 
-
+'''
 class Employee:
     def setName(self, name):
         self.name = name
@@ -139,10 +150,7 @@ class Employee:
     def getName(self):
         return self.name
 
-aaj tak 
-zee news
-uttaranchal
-aastha
+
 
     def setMarks(self, marks):
         self.marks = marks
@@ -160,7 +168,7 @@ for i in range(n):
 
     print("Hola ",s.getName()," your marks are",s.getMarks())
 
-
+'''
 
 #s.name= direct access no validation
 #s.getName() with validation
@@ -168,17 +176,15 @@ for i in range(n):
 
 
 
-
-Difference between instance method and
-class method .
-
+###Difference between instance method and class method .
+---
 Outside the class we can call instance method only using the object reference.
 First we have to create object,unless we
 are not using instance variable we shouldn''t really make a object to call it.
 
 
 To declare instance method:
-
+'''
 def m(self):
    pass
 
@@ -186,6 +192,8 @@ To declare class method:
 
 def m(cls):   #cls is class level variable
    print(cls.name)
+
+'''
 
  #whatever static variables are made can be
  #accessed
@@ -198,7 +206,7 @@ def m(cls):   #cls is class level variable
 self instance variable
 cls static or class level variable
 
-
+---
 2 In class method decorator is needed @classmethod but in instance method nothing is needed as such
 
 
@@ -209,10 +217,10 @@ INSTANCE VS CLASS
 1. Inside method body if we are using atleast one instance variable then
  we should declare that method as instance method
 
-2.Inside method body if we are using only static variable ,we must declare method as
+2. Inside method body if we are using only static variable ,we must declare method as
 class method.
 
-3  In class method decorator is needed @classmethod but in instance method nothing is needed as such...
+3.  In class method decorator is needed @classmethod but in instance method nothing is needed as such...
 
 
 4 The first argument to the instance method should be self and by using self,this is reference to current object we can acces instance variables inside method..
@@ -226,10 +234,8 @@ We can call classmethod either by using object reference as well as class name b
 
  
 
-#dangal
-#kasauti 
 
-
+'''
 
 
 class Animal:
@@ -244,7 +250,7 @@ class Animal:
 Animal.data('kangaroo')
 Animal.data('Penguin')
 
-
+'''
 
 ---------------------
 
@@ -258,7 +264,7 @@ class Maths:
     def objects_number(cls):
         print("The number of objects created are",cls.count)
 
-
+---------------------
 
 objetoA=Maths()
 objetoB=Maths()
@@ -681,7 +687,8 @@ This performs cleanup activities
 # list=None
 print("End of application")
 
-'''
+
+---
 This is calling of the constructor
 This is calling of the constructor
 This is calling of the constructor
@@ -689,8 +696,10 @@ This performs cleanup activities
 This performs cleanup activities
 This performs cleanup activities
 End of application
-'''
+---
 
+
+'''
 import sys
 class Check:
     def __init__(self):
@@ -700,6 +709,7 @@ t1=Check()
 t2=t1
 t3=t2
 print(sys.getrefcount(t1))
-'''4 ref count t1,t2,t3 explicit
-               self implicit
-               '''
+
+#4 ref count t1,t2,t3 explicit self implicit
+
+'''               
